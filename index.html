@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный сайт</title>
+    <link rel="stylesheet" href="apperance.css">
+</head>
+<body>
+    <header>
+        <h1>Изучаем веб-разработку</h1>
+        <nav>
+            <button class="nav-btn" onclick="showSection('html')">HTML</button>
+            <button class="nav-btn" onclick="showSection('css')">CSS</button>
+            <button class="nav-btn" onclick="showSection('js')">JavaScript</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="html" class="topic">
+            <h2>HTML - структура сайта</h2>
+            <div class="explanation">
+                <p>HTML - это язык разметки, который определяет структуру веб-страницы.</p>
+                <div class="example">
+                    <pre><code>&lt;div class="container"&gt;
+    &lt;h1&gt;Заголовок&lt;/h1&gt;
+    &lt;p&gt;Параграф текста&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="css" class="topic hidden">
+            <h2>CSS - стили сайта</h2>
+            <div class="explanation">
+                <p>CSS отвечает за внешний вид элементов на странице.</p>
+                <div class="example">
+                    <pre><code>.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="js" class="topic hidden">
+            <h2>JavaScript - интерактивность</h2>
+            <div class="explanation">
+                <p>JavaScript добавляет интерактивность на веб-страницу.</p>
+                <div class="example">
+                    <pre><code>function showMessage() {
+    alert('Привет, мир!');
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="bot-integration" class="topic hidden">
+            <h2>Telegram Bot Интеграция</h2>
+            <div class="explanation">
+                <p>Отправляйте результаты своего обучения боту:</p>
+                <div class="bot-controls">
+                    <input type="text" id="telegramId" placeholder="Ваш Telegram ID">
+                    <button onclick="sendProgress()">Отправить прогресс</button>
+                </div>
+                <div id="progress-status"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="logic.js"></script>
+</body>
+</html>

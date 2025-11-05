@@ -1,0 +1,116 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+}
+
+/* Стили шапки */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+/* Навигация */
+nav {
+    margin: 20px 0;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a73e8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #1557b0;
+}
+
+/* Основной контент */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.topic {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Примеры кода */
+.example {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    font-family: 'Consolas', monospace;
+    color: #333;
+}
+
+/* Стили для интеграции с ботом */
+.bot-controls {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.bot-controls input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.bot-controls button {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bot-controls button:hover {
+    background-color: #1557b0;
+}
+
+#progress-status {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
